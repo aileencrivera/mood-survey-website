@@ -1,0 +1,84 @@
+html, body {
+  height: 120%;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+div.cont {
+text-align: center;
+display: block;
+width: 100%;
+
+}
+
+body {
+  padding: 100px;
+  background-color: #e5ded1;
+  color: #FFFF;
+  overflow-y: scroll;
+}
+
+.z-text {
+  display: inline-block;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+
+  overflow: hidden;
+}
+
+.form-container div {
+  width: 90%;
+  height: 500px;
+}
+
+
+body {
+  margin: -33px;
+}
+
+.z-text {
+  animation: wobble 10s ease-in-out infinite;
+  transform: rotateX(30deg) rotateY(-30deg);
+}
+
+.z-layer {
+  filter: brightness(0.7);
+}
+
+.z-layer:first-child {
+  filter: brightness(1);
+}
+
+@keyframes wobble {
+  0%, 100% {
+    transform: rotate3d(-1, 1, 0, 30deg);
+  }
+  25% {
+    transform: rotate3d(1, 1, 0, 30deg);
+  }
+  50% {
+    transform: rotate3d(1, -1, 0, 30deg);
+  }
+  75% {
+    transform: rotate3d(-1, -1, 0, 30deg);
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #adafc5;
+}
+
